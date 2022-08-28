@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		1147839E28BB966A00DF0502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147839D28BB966A00DF0502 /* AppDelegate.swift */; };
 		114783A028BB966A00DF0502 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147839F28BB966A00DF0502 /* SceneDelegate.swift */; };
-		114783A228BB966A00DF0502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114783A128BB966A00DF0502 /* ViewController.swift */; };
+		114783A228BB966A00DF0502 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114783A128BB966A00DF0502 /* WeatherViewController.swift */; };
 		114783A528BB966A00DF0502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114783A328BB966A00DF0502 /* Main.storyboard */; };
 		114783A728BB966C00DF0502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114783A628BB966C00DF0502 /* Assets.xcassets */; };
 		114783AA28BB966C00DF0502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114783A828BB966C00DF0502 /* LaunchScreen.storyboard */; };
+		114783B728BB98BD00DF0502 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 114783B628BB98BD00DF0502 /* Quicksand-SemiBold.ttf */; };
+		114783B928BB9F1800DF0502 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114783B828BB9F1800DF0502 /* DesignableTextField.swift */; };
+		114783BB28BBA2BD00DF0502 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114783BA28BBA2BD00DF0502 /* BounceButton.swift */; };
+		114783BD28BBA31900DF0502 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114783BC28BBA31900DF0502 /* DesignButton.swift */; };
+		114783BF28BBA4D100DF0502 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114783BE28BBA4D100DF0502 /* WeatherDataModel.swift */; };
+		114783C128BBA65600DF0502 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114783C028BBA65600DF0502 /* ChangeCityViewController.swift */; };
+		114783C428BBA7A600DF0502 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 114783C328BBA7A600DF0502 /* Alamofire */; };
+		114783C728BBA81500DF0502 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 114783C628BBA81500DF0502 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1147839A28BB966A00DF0502 /* OpenWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1147839D28BB966A00DF0502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1147839F28BB966A00DF0502 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		114783A128BB966A00DF0502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		114783A128BB966A00DF0502 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		114783A428BB966A00DF0502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		114783A628BB966C00DF0502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114783A928BB966C00DF0502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114783AB28BB966C00DF0502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114783B628BB98BD00DF0502 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		114783B828BB9F1800DF0502 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		114783BA28BBA2BD00DF0502 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		114783BC28BBA31900DF0502 /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		114783BE28BBA4D100DF0502 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		114783C028BBA65600DF0502 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114783C728BBA81500DF0502 /* SwiftyJSON in Frameworks */,
+				114783C428BBA7A600DF0502 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,61 @@
 		1147839C28BB966A00DF0502 /* OpenWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				1147839D28BB966A00DF0502 /* AppDelegate.swift */,
-				1147839F28BB966A00DF0502 /* SceneDelegate.swift */,
-				114783A128BB966A00DF0502 /* ViewController.swift */,
-				114783A328BB966A00DF0502 /* Main.storyboard */,
+				114783B528BB96DD00DF0502 /* ExtraResources */,
+				114783B428BB96D300DF0502 /* Model */,
+				114783B128BB968500DF0502 /* AppDelegate */,
+				114783B228BB969000DF0502 /* Controller */,
+				114783B328BB969B00DF0502 /* View */,
 				114783A628BB966C00DF0502 /* Assets.xcassets */,
-				114783A828BB966C00DF0502 /* LaunchScreen.storyboard */,
 				114783AB28BB966C00DF0502 /* Info.plist */,
 			);
 			path = OpenWeatherApp;
+			sourceTree = "<group>";
+		};
+		114783B128BB968500DF0502 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1147839D28BB966A00DF0502 /* AppDelegate.swift */,
+				1147839F28BB966A00DF0502 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		114783B228BB969000DF0502 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				114783A128BB966A00DF0502 /* WeatherViewController.swift */,
+				114783C028BBA65600DF0502 /* ChangeCityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		114783B328BB969B00DF0502 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				114783A328BB966A00DF0502 /* Main.storyboard */,
+				114783A828BB966C00DF0502 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114783B428BB96D300DF0502 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				114783BE28BBA4D100DF0502 /* WeatherDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		114783B528BB96DD00DF0502 /* ExtraResources */ = {
+			isa = PBXGroup;
+			children = (
+				114783B628BB98BD00DF0502 /* Quicksand-SemiBold.ttf */,
+				114783B828BB9F1800DF0502 /* DesignableTextField.swift */,
+				114783BA28BBA2BD00DF0502 /* BounceButton.swift */,
+				114783BC28BBA31900DF0502 /* DesignButton.swift */,
+			);
+			path = ExtraResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +145,10 @@
 			dependencies = (
 			);
 			name = OpenWeatherApp;
+			packageProductDependencies = (
+				114783C328BBA7A600DF0502 /* Alamofire */,
+				114783C628BBA81500DF0502 /* SwiftyJSON */,
+			);
 			productName = OpenWeatherApp;
 			productReference = 1147839A28BB966A00DF0502 /* OpenWeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +177,10 @@
 				Base,
 			);
 			mainGroup = 1147839128BB966A00DF0502;
+			packageReferences = (
+				114783C228BBA7A600DF0502 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				114783C528BBA81500DF0502 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 1147839B28BB966A00DF0502 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				114783AA28BB966C00DF0502 /* LaunchScreen.storyboard in Resources */,
+				114783B728BB98BD00DF0502 /* Quicksand-SemiBold.ttf in Resources */,
 				114783A728BB966C00DF0502 /* Assets.xcassets in Resources */,
 				114783A528BB966A00DF0502 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114783A228BB966A00DF0502 /* ViewController.swift in Sources */,
+				114783A228BB966A00DF0502 /* WeatherViewController.swift in Sources */,
+				114783BB28BBA2BD00DF0502 /* BounceButton.swift in Sources */,
+				114783BF28BBA4D100DF0502 /* WeatherDataModel.swift in Sources */,
 				1147839E28BB966A00DF0502 /* AppDelegate.swift in Sources */,
+				114783BD28BBA31900DF0502 /* DesignButton.swift in Sources */,
 				114783A028BB966A00DF0502 /* SceneDelegate.swift in Sources */,
+				114783B928BB9F1800DF0502 /* DesignableTextField.swift in Sources */,
+				114783C128BBA65600DF0502 /* ChangeCityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +366,9 @@
 				DEVELOPMENT_TEAM = QDRRU3Y7QM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenWeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Open Weather App needs your location to obtain weather for you";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Open Weather App needs your location to obtain weather for you";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Open Weather App needs your location to obtain weather for you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +397,9 @@
 				DEVELOPMENT_TEAM = QDRRU3Y7QM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenWeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Open Weather App needs your location to obtain weather for you";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Open Weather App needs your location to obtain weather for you";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Open Weather App needs your location to obtain weather for you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,6 +440,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		114783C228BBA7A600DF0502 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		114783C528BBA81500DF0502 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		114783C328BBA7A600DF0502 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 114783C228BBA7A600DF0502 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		114783C628BBA81500DF0502 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 114783C528BBA81500DF0502 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1147839228BB966A00DF0502 /* Project object */;
 }

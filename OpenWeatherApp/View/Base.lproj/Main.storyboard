@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-SemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="OpenWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Night" translatesAutoresizingMaskIntoConstraints="NO" id="cof-FF-4Ev">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-9e-wOy">
+                                <rect key="frame" x="38" y="495" width="288" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0C°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kx-qQ-JDW">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="35"/>
+                                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze3-Bo-7fo">
+                                        <rect key="frame" x="0.0" y="52" width="288" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="V9K-vg-Bcf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="pub-eG-KWS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="DyT-kg-1DA">
+                                <rect key="frame" x="44.5" y="102" width="286" height="463"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy2" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-dJ-hk3">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="4Dr-56-ClK"/>
+                                            <constraint firstAttribute="height" constant="150" id="5XW-ku-v2d"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omc-vY-r7e" customClass="DesignButton" customModule="OpenWeatherApp" customModuleProvider="target">
+                                        <rect key="frame" x="174" y="0.0" width="112" height="97"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="cloudRefresh"/>
+                                        <connections>
+                                            <segue destination="Fz9-v8-GJW" kind="show" identifier="showCity" id="glh-Oy-KMZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DyT-kg-1DA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="1M2-mT-7wJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NnV-9e-wOy" secondAttribute="trailing" constant="49" id="IE4-9J-B6a"/>
+                            <constraint firstItem="cof-FF-4Ev" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RYK-6T-Icv"/>
+                            <constraint firstItem="DyT-kg-1DA" firstAttribute="centerY" secondItem="cof-FF-4Ev" secondAttribute="centerY" id="S8g-5e-ozS"/>
+                            <constraint firstItem="cof-FF-4Ev" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Xlq-7k-eoe"/>
+                            <constraint firstItem="cof-FF-4Ev" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZFs-Zj-Nqq"/>
+                            <constraint firstItem="DyT-kg-1DA" firstAttribute="centerX" secondItem="cof-FF-4Ev" secondAttribute="centerX" id="e2H-Jb-6aE"/>
+                            <constraint firstItem="cof-FF-4Ev" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lFk-LU-Y84"/>
+                            <constraint firstItem="NnV-9e-wOy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="mdd-va-zlL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NnV-9e-wOy" secondAttribute="bottom" constant="72" id="wiL-ul-Ojc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Ze3-Bo-7fo" id="dXs-sl-tFo"/>
+                        <outlet property="tempLabel" destination="9Kx-qQ-JDW" id="7d1-TA-GeO"/>
+                        <outlet property="weatherIcon" destination="9Pe-dJ-hk3" id="cwR-xG-Wz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="97.601199400299862"/>
+        </scene>
+        <!--Change City View Controller-->
+        <scene sceneID="U0B-QC-1kj">
+            <objects>
+                <viewController id="Fz9-v8-GJW" customClass="ChangeCityViewController" customModule="OpenWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FGW-Z1-mtG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="y8Z-Yy-GJ0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ggf-Wg-2hM">
+                                <rect key="frame" x="60" y="126" width="255" height="87"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDN-FR-Co3" customClass="DesignableTextField" customModule="OpenWeatherApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
+                                                <imageReference key="value" image="homekit" catalog="system" symbolScale="small"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemOrangeColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIm-Es-CD3" customClass="DesignButton" customModule="OpenWeatherApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="53" width="255" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Get Weather">
+                                            <fontDescription key="titleFontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemOrangeColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ime-hE-K5u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ggf-Wg-2hM" firstAttribute="centerX" secondItem="y8Z-Yy-GJ0" secondAttribute="centerX" id="0Yx-3c-t22"/>
+                            <constraint firstItem="ime-hE-K5u" firstAttribute="bottom" secondItem="ggf-Wg-2hM" secondAttribute="bottom" constant="434" id="CjT-LR-dQw"/>
+                            <constraint firstItem="ime-hE-K5u" firstAttribute="trailing" secondItem="y8Z-Yy-GJ0" secondAttribute="trailing" id="Wkt-U5-08Y"/>
+                            <constraint firstItem="y8Z-Yy-GJ0" firstAttribute="top" secondItem="ime-hE-K5u" secondAttribute="top" id="dCX-aP-P0E"/>
+                            <constraint firstItem="y8Z-Yy-GJ0" firstAttribute="leading" secondItem="ime-hE-K5u" secondAttribute="leading" id="fdS-pd-gRI"/>
+                            <constraint firstItem="ggf-Wg-2hM" firstAttribute="leading" secondItem="ime-hE-K5u" secondAttribute="leading" constant="60" id="l33-3u-Cx2"/>
+                            <constraint firstItem="ime-hE-K5u" firstAttribute="trailing" secondItem="ggf-Wg-2hM" secondAttribute="trailing" constant="60" id="rwB-fq-TLy"/>
+                            <constraint firstItem="ime-hE-K5u" firstAttribute="bottom" secondItem="y8Z-Yy-GJ0" secondAttribute="bottom" id="u8E-gt-oCy"/>
+                            <constraint firstItem="ggf-Wg-2hM" firstAttribute="top" secondItem="ime-hE-K5u" secondAttribute="top" constant="126" id="ydO-kL-7sx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zfR-NO-cbl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSx-oa-c9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="fDN-FR-Co3">
+            <size key="intrinsicContentSize" width="72" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Night" width="664" height="1436"/>
+        <image name="cloudRefresh" width="88" height="83"/>
+        <image name="cloudy2" width="128" height="128"/>
+        <image name="day" width="658" height="1432"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
